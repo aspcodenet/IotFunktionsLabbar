@@ -1,8 +1,66 @@
+import enum
 
-def CalcVat(beloppInkMoms):
-    return beloppInkMoms * 0.20
+class VatCalculation(enum.Enum):
+    INK_MOMS = 1
+    EX_MOMS = 2
 
-print(Calcvat(1000))
+
+def CalculateVat(belopp, inkEllerExMoms):
+    if inkEllerExMoms == VatCalculation.INK_MOMS:
+        return belopp * 0.20
+    return belopp *0.25
+
+
+
+
+
+
+print(CalculateVat(1000, VatCalculation.EX_MOMS))
+
+
 
 #Modifiera - lägg till parameter ink/exkl
 #               - as string then enum
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

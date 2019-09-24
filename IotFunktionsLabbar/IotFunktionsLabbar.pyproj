@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>fdff3571-3ca7-4d60-89a0-ac05401fbec5</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Lab10.py</StartupFile>
+    <StartupFile>FilDemo.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="FilDemo.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Lab1.py" />
     <Compile Include="Lab2.py">
       <SubType>Code</SubType>
@@ -34,6 +37,11 @@
     <Compile Include="Lab3.py">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hej.txt">
+      <SubType>Code</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

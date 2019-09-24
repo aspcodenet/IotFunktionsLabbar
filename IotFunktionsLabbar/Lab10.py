@@ -15,4 +15,4 @@ def ToRovarsprak(txt):
             retValue = retValue + ch
     return retValue
 
-print(ToRovarsprak("this is fun. Do you also think so?"))
+print(ToRovarsprak("stefan"))
